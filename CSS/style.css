@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* variables */
+:root {
+    --logo-font: 'Mango Vintage Personal Use Only', sans-serif;
+    --text-font: 'Alice', sans-serif;
+    --text-color: #06131B;
+    --background-color: #EAEBEC;
+}
+
+/* selection */
+::selection {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+/* body style */
+body {
+    background-color: var(--background-color);
+}
+
+
+/* custom element */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 18px;
+}
+a:hover {
+    color: #06131B;
+}
+
+
+/* nav style */
+nav ul, nav h2 {
+    flex: 1;
+}
+nav h2 {
+    font-family: var(--logo-font);
+    font-size: 30px;
+}
+nav li a, nav h2 {
+    color: var(--text-color);
+}
+@media (max-width: 567px) {
+    nav h2 {
+        font-size: 20px;
+    }
+    nav li a {
+        font-size: 14px;
+    }
+}
+
+
+/* background */
+.background {
+    position: relative;
+    background-image: url(../images/florist.png);
+    background-size: cover;
+    height: 650px;
+}
+.background .head {
+    position: absolute;
+    color: var(--background-color);
+    font-family: var(--logo-font);
+    font-size: 60px;
+    font-weight: bold;
+    word-spacing: 9px;
+    letter-spacing: 12px;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+@media (max-width: 567px) {
+    .background {
+        height: 300px;
+    }
+    .background .head {
+        font-size: 30px;
+        word-spacing: 0;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* products */
+.products .image {
+    overflow: hidden;
+}
+.products .image img {
+    max-width: 100%;
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -ms-transition: .7s ease;
+    -o-transition: .7s ease;
+}
+.products .box:hover .image img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.products .text h2 {
+    font-family: var(--logo-font);
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+.products .text p {
+    font-family: var(--text-font);
+    font-size: 20px;
+}
+.products .text a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -ms-transition: .7s ease;
+    -o-transition: .7s ease;
+}
+.products .text a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+
+/* footer */
+footer {
+    background-color: #27405A;
+}
+footer h3 {
+    text-transform: uppercase;
+    font-family: var(--logo-font);
+}
+footer ul li {
+    margin-top: 10px;
+    padding-left: 5px;
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -ms-transition: .7s ease;
+    -o-transition: .7s ease;
+}
+footer ul li:hover {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+footer ul li:hover a {
+    color: var(--background-color) !important;
+}
