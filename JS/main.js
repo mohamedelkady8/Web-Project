@@ -1,6 +1,6 @@
+//animation
 let animations = document.querySelectorAll('.ani');
 
-//animation
 window.onscroll = function() {
     animations.forEach ((animation) => {
         let OffsetTop = animation.offsetTop;
@@ -12,3 +12,4 @@ window.onscroll = function() {
         }
     })
 }
+
