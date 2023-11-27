@@ -1,8 +1,8 @@
 //animation
-let animations = document.querySelectorAll('.ani');
+let BoxesAnimations = document.querySelectorAll('.ani');
 
 window.onscroll = function() {
-    animations.forEach ((animation) => {
+    BoxesAnimations.forEach ((animation) => {
         let OffsetTop = animation.offsetTop;
         let OuterHeight = animation.offsetHeight;
         let windowHeight = this.innerHeight;

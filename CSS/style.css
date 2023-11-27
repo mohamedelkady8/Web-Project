@@ -19,8 +19,13 @@
 }
 
 /* body background */
-.background-img {
+.background-color {
     background-color: var(--background-color);
+}
+.background-img {
+    background:url(../images/backgroundImg.jpeg), rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 
@@ -66,8 +71,9 @@ nav li a, nav h2 {
     position: relative;
     background-image: url(../images/florist.png);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    height: 650px;
+    height: 660px;
 }
 .background .head {
     position: absolute;
@@ -87,8 +93,8 @@ nav li a, nav h2 {
 }
 @media (max-width: 567px) {
     .background {
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
         max-height: 180px;
     }
     .background .head {
@@ -103,8 +109,12 @@ nav li a, nav h2 {
 /* products */
 .products .image {
     overflow: hidden;
+    box-shadow: 1px 1px 13px -5px #7f91a4;
+    /* border: 1px solid #a6b0ba; */
 }
 .products .image img {
+    width: 100%;
+    height: 350px;
     transition: .7s ease;
     -webkit-transition: .7s ease;
     -moz-transition: .7s ease;
@@ -123,11 +133,17 @@ nav li a, nav h2 {
     letter-spacing: 3px;
     margin-bottom: 0;
 }
+@media (min-width: 991px) and (max-width: 1349px) {
+    .products .text h2 {
+        width: min-content;
+        margin: auto;
+    }
+}
 .products .text p {
     font-family: var(--text-font);
     font-size: 20px;
 }
-.products .text button {
+.products button {
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -159,21 +175,17 @@ footer h3 {
 footer ul li {
     margin-top: 10px;
     padding-left: 5px;
+}
+footer ul li a {
     transition: .7s ease;
     -webkit-transition: .7s ease;
     -moz-transition: .7s ease;
     -ms-transition: .7s ease;
     -o-transition: .7s ease;
 }
-footer ul li:hover {
-    transform: translateX(10px);
-    -webkit-transform: translateX(10px);
-    -moz-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
-}
-footer ul li:hover a {
+footer ul li a:hover {
     color: var(--background-color) !important;
+    margin-left: 10px;
 }
 
 
