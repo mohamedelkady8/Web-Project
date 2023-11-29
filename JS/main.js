@@ -31,7 +31,7 @@ form.addEventListener(('submit'), (e)=> {
     let validPassword =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d@$!%*?&]){6,}/ig;
 
     if (email.match(validEmail) && (password.match(validPassword))){
-        window.location.href = "products.html";
+        window.location.href = "home.html";
     }else {
         form.style.display = 'none';
         messageBox.style.display = 'block';
