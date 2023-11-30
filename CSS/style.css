@@ -90,7 +90,7 @@ nav li a, nav h2 {
     word-spacing: 9px;
     letter-spacing: 12px;
     top: 50%;
-    left: 10%;
+    left: 7%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -101,11 +101,11 @@ nav li a, nav h2 {
     .background {
         background-size: cover;
         background-attachment: scroll;
-        max-height: 180px;
+        max-height: 244px;
     }
     .background .head {
         left: 2%;
-        font-size: 30px;
+        font-size: 28px;
         word-spacing: 0;
         letter-spacing: 2px;
     }
@@ -113,6 +113,9 @@ nav li a, nav h2 {
 
 
 /* products */
+.products .row:not(:first-of-type){
+    margin-top: 15px;
+}
 .products .image {
     overflow: hidden;
     box-shadow: 1px 1px 13px -5px #7f91a4;
