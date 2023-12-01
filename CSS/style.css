@@ -196,7 +196,7 @@ footer ul li a:hover {
 
 /* ///////////////////////////////////////////////////// */
 /* register & login page */
-.logo h2 {
+/* .logo h2 {
   font-family: var(--logo-font);
   font-size: 35px;
   color: white;
@@ -252,7 +252,7 @@ footer ul li a:hover {
   color: var(--background-color);
 }
 /* error msg */
-.message-box {
+/* /* .message-box {
   display: none;
   padding: 20px;
   background-color: var(--background-color);
@@ -273,7 +273,7 @@ footer ul li a:hover {
 }
 
 /* animation */
-.animation {
+/*.animation {
   animation: up 1s;
   -webkit-animation: up 1s;
 }
@@ -295,7 +295,7 @@ footer ul li a:hover {
 }
 
 /* add background image with overlay */
-.backgroundimageOverlay {
+/*.backgroundimageOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -401,8 +401,7 @@ div h1 {
 
 div i {
   font-size: 30px;
-  margin-right: 10px;
-}
+  margin-right: 10px; */
 /* new form styles */
 :root {
   --primary-color: black;
