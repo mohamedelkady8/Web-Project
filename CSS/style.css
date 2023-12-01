@@ -419,7 +419,7 @@ div i {
   place-items: center;
   min-height: 100vh;
   background-color: #27405a;
-  background-image: url(/images/backgroundImg.jpeg);
+  background-image: url(../images/backgroundImg.jpeg);
 }
 form {
   background-color: #27405a;
