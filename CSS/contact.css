@@ -1,0 +1,98 @@
+.contact-form {
+  position: relative;
+  width: 60%;
+  padding: 20px 40px;
+  background-color: var(--background-color);
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-form h1 {
+  font-family: var(--logo-font);
+  text-align: center;
+  color: var(--text-color);
+}
+.contact-form .form-box {
+  width: 60%;
+}
+.contact-form .form-box input,
+.contact-form .form-box textarea {
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #27405a;
+  font-size: 20px;
+  resize: none;
+}
+.contact-form .form-box input:focus,
+.contact-form .form-box textarea:focus {
+  outline: none;
+}
+
+.contact-form .form-box .submit {
+  width: 100%;
+  background-color: #27405a;
+  padding: 15px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--background-color);
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.child {
+  position: absolute;
+  bottom: -60px;
+  right: -150px;
+  background-color: #27405a;
+  color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.child div {
+  margin: 30px 0;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.child div p:first-of-type {
+  font-family: var(--logo-font);
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.child div p i {
+  font-size: 25px;
+  margin-right: 7px;
+}
+.child div p:last-of-type {
+  font-size: 20px;
+  text-indent: 20px;
+  font-weight: normal;
+}
+.bottom a {
+  color: var(--background-color);
+  font-style: italic;
+  font-size: 20px;
+  text-transform: none;
+  text-decoration: none;
+}
+.bottom a:hover,
+.submit:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
