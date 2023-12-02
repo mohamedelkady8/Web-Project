@@ -12,38 +12,38 @@
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/form.css">
 </head>
-
-<body class="background-img">
-
-    <div class="logo text-center mt-2">
-        <h2 class="mb-0">Orchidées</h2>
+<body class="loginbody">
+<form action="#" class="form">
+    <h1 class="text-center">welcome to Orchidées</h1>
+    <!-- Progress bar -
+    <!-- Steps -->
+    <div class="form-step form-step-active">
+      <div class="input-group">
+        <label for="username">Email</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="enter your  email"
+        />
+      </div>
+      <div class="input-group">
+        <label for="position">Password</label>
+        <input
+          type="text"
+          name="Lastname"
+          id="Lastname"
+          placeholder="enter your  password"
+        />
+      </div>
+      <div class="">
+        <a href="home.html" class="btn btn-prev">login</a>
+        <a href="register.html" class="btn btn-prev " style="margin-top: 10px;">sign up</a>
+      </div>
     </div>
-
-    <div class="formbox animation text-center mt-4">
-        <div class="container">
-            <div class="row col-md-8 mb-md-3 mt-sm-0 mt-4">
-                <h1 class="mb-5">Login</h1>
-                <div class="message-box" id="messageBox">
-                    <p class="message-text" id="messageText">Invalid email or password. Please try again.</p>
-                    <button onclick="closeMsg()">Close</button>
-                </div>
-                <form action="home.html" method="POST">
-                    <div class="form-floating mb-2 mb-md-3">
-                        <input type="email" class="form-control" id="emailInput" placeholder="Email" required>
-                        <label for="emailInput">Email</label>
-                    </div>
-                    <div class="form-floating mb-2 mb-md-3">
-                        <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
-                        <label for="passwordInput">Password</label>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                </form>
-                <p class="mt-4">Don't have an account? <a class="ms-1" href="register.html">Register</a></p>
-            </div>
-        </div>
-    </div>
+   
 
     <script src="JS/form_validation.js"></script>
 </body>
